@@ -2,7 +2,7 @@ torch
 sentence_transformers
 transformers
 pysqlite3
-openai
+openai>=1.0.0
 rank_bm25
 spacy
 
