@@ -55,6 +55,8 @@ python -m factscore.factscorer \
 - `--input_path`: The path to the preprocessed prediction file.
 - `--model_name`: Default is `retrieval+ChatGPT`. (Other supported configurations include `retrieval+llama+npm` and `retrieval+ChatGPT+npm`, and `retrieval+llama`. These alternatives have not been tested extensively, so we recommend using the default configuration.)
 - `--openai_key`: '.txt' file containing OpenAI API Key.
+- For Azure OpenAI, set the environment variables `AZURE_OPENAI_ENDPOINT` and
+  `AZURE_OPENAI_API_VERSION` (or pass them when instantiating `OpenAIModel`).
 - `--knowledge_source`: `enwiki-20230401` for using (Wikipedia Dump - 2023/04/01) as a knowledge source / `biomedical` for using biomedical texts as a knowledge source.
 
 **Optional flags**:
